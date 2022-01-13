@@ -3,11 +3,11 @@
 testqube_VERSION ?= 9.0
 ECR_REPO = "initial value"
 
-echo-value:
-	@echo ECR_REPO
+before-value:
+	@echo $(ECR_REPO)
 .PHONY: docker-build
 
-display-value:
+after-value:
 	ECR_REPO=$(AWS_ACC_NO).dkr.ecr.ap-southeast-2.amazonaws.com/testqube
 	@echo $(ECR_REPO)
 .PHONY: push-ecr
