@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Downloading..'
                 script {
-                    git changelog: false, poll: false, url: 'git url: 'https://github.com/sanjayrohilla13/makefile-parameter-passing.git'                
+                    git changelog: false, poll: false, url: 'https://github.com/sanjayrohilla13/makefile-parameter-passing.git'              
                 }
             }
         }
