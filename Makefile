@@ -8,4 +8,5 @@ before-value:
 after-value:
 	ECR_REPO=$(AWS_ACC_NO).dkr.ecr.ap-southeast-2.amazonaws.com/testqube
 	@echo $(AWS_ACC_NO)
+	@echo $(ENVIRONMENT)
 .PHONY: push-ecr
